@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+	padding:0;
+	margin:0;
+}
+
+#web_wrapper {
+	height: 750px;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	margin-top: 20px;
+}
+
+#top_navigation {
+	height: 20px;
+}
+
+#top_navigation a:link, #top_navigation a:visited {
+	text-decoration:none;
+}
+
+#top_navigation a:hover, #top_navigation. a:active {
+	text-decoration:underline;
+}
+
+#header {
+	height: 100px;
+}
+
+#menu {
+	height: 50px;
+	background-image: url(../Images/menu_bg.png);
+	background-repeat: repeat-x;
+}
+
+#main {
+	/* [disabled]height: 560px; */
+	/* [disabled]background-color: #CCC; */
+	/* [disabled]min-height: 500px; */
+}
+
+#footer_wrapper {
+	height: 100px;
+	width:100%;
+	background-image: url(images/footer.jpg);
+	background-repeat: repeat-x;
+	box-shadow: 0px 1px 3px #666666 inset;
+}
+
+#footer {
+	width:1000px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5px
+}
+
+#subscribe {
+	width: 495px;
+	float:left;
+	padding-left:5px;
+}
+#follow {
+	width:500px;
+	text-align:right;
+	float:left;
+}
+
+#mc_embed_signup {
+	width:400px;
+	clear:left;
+	font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+#bottom {
+	width:1000px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:15px;
+}
+
+#scroller {
+	width: 1000px;
+	height: 160px;
+	padding-top: 15px;
+	white-space: nowrap;
+	float: left;
+	overflow-y: hidden;
+	overflow-x: scoll;
+}
+
+#featured {
+    height:30px;
+	padding-top:15px;
+	float:left;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:24px;
+	font-weight:bolder;
+}
+
+#static_ads {
+	width:267px;
+	height:348px;
+	padding-top:10px;
+	text-align:center;
+	float: left
+}
+
+.top_link {
+	height: 20px;
+	width: 100px;
+	float: right;
+	color: #999;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+.header_section {
+	width: 50%;
+	height: 100px;
+	float: left;
+}
+
+.address {
+	width: 300px;
+	height: 500px;
+	float: left;
+}
+
+.map {
+	float:left;
+}
