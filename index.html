@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Scrolling</title>
+
+<style type="text/css">
+
+body {
+	background-color: #C0C0C0;
+	font-family: Arial;
+}
+
+ul {
+	list-style-type: none;
+	font-family: Arial;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+
+#fade li {
+	background: #fff;
+	transition: background .5s ease-in-out;
+	-webkit-transition: background .5s ease-in-out;
+}
+
+#fade li:hover {
+	background: #ddd;
+	cursor: pointer;
+}
+
+#web_wrapper {
+	width: 700px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	box-shadow: 0px 0px 20px 2px;
+}
+
+#menu {
+	width: 100px;
+	height: 400px;
+	text-align: center;
+	float: left;
+	background-color: #ffffff;
+	box-shadow: 10px;
+}
+
+#slider_wrapper {
+	width: 600px;
+	height: 400px;
+	float: left;
+	overflow: hidden;
+}
+
+#imageshadow {
+	position: relative;
+	left: 100px;
+	height: 400px;
+	width: 10px;
+	box-shadow: 10px 0px 10px -8px inset;
+}
+
+#slider {
+	position: relative;
+	left: 0px;
+	height: 400px;
+	width: 2400px;
+	transition: left 1s ease-in-out;
+	-webkit-transition: left 1s ease-in-out;
+}
+
+.page {
+	height: 400px;
+	width: 600px;
+	float: left;
+	background-color: #FFF;
+	text-align: center;
+}
+
+h1{
+	font-size: 24px;
+}
+</style>
+
+<script language="javascript">
+
+function imagePosition(position){
+	document.getElementById("slider").style.left = position;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="web_wrapper">
+	<div id="menu">
+		<ul id="fade">
+			<li onMouseOver="imagePosition(0)">Home</li>
+			<li onMouseOver="imagePosition(-600)">Page 2</li>
+			<li onMouseOver="imagePosition(-1200)">Page 3</li>
+			<li onMouseOver="imagePosition(-1800)">Links</li>
+		</ul>
+	</div>
+
+	<div id="slider_wrapper">
+		<div id="slider">
+			<div class="page">
+            	<h1>Welcome to Mr Jones' Computing Site</h1>
+                <p>This page uses CSS3 transitions and javascript<br>
+                to create fading buttons and scrolling content.</p> 
+            </div>
+			<div class="page">Page 2</div>
+			<div class="page">Page 3</div>
+			<div class="page">
+            	<p><a href="https://github.com/MrJonesOBA/GCSE-Python">GCSE Python example</a></p>
+   				<p><a href="/UMP/index.html">Urban Mobile Phones</a></p>
+    			<p><a href="/Skulpt/index.html">Skulpt</a></p>
+            </div>
+		</div>
+	</div>
+
+	<div id="imageshadow"></div>
+
+</div>
+
+</body>
+
+</html>
