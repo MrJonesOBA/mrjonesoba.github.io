@@ -36,22 +36,18 @@ function runit() {
    eval(Sk.importMainWithBody("<stdin>",false,prog)); 
 } 
 </script> 
-
-<h3>Try This</h3> 
+<div style="margin-left: auto;margin-right:auto">
+<div style="padding-left:200px">
+<h3>Type some Python (v2) and hit he Run button!</h3> 
 <form> 
-<textarea id="yourcode" cols="40" rows="10">import turtle
-
-t = turtle.Turtle()
-t.forward(100)
-
-print "Hello World" 
-</textarea><br /> 
-<button type="button" onclick="runit()">Run</button> 
+<textarea id="yourcode" cols="80" rows="20"></textarea><br /> 
+<button type="button" onClick="runit()">Run</button> 
 </form> 
 <pre id="output" ></pre> 
 <!-- If you want turtle graphics include a canvas -->
 <canvas id="mycanvas" ></mycanvas> 
-
+</div>
+</div>
 </body> 
 
 </html> 
