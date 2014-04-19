@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta charset="iso-8859-1">
+<script src="../src/brython.js"></script>
+</head>
+<body onLoad="brython()">
+<script type="text/python">
+from browser import doc, win, alert
+
+def echo(ev):
+    alert("Hello %s !" %doc["zone"].value)
+
+doc["echo"].bind('click', echo)
+</script>
+<p>Your name is : <input id="zone"><button id="echo">click !</button>
+</body>
+</html>
