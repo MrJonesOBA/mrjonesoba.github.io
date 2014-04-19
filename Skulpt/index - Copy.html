@@ -11,23 +11,9 @@
 <script type="text/javascript"> 
 // output functions are configurable.  This one just appends some text
 // to a pre element.
-function outf(text) {
-    var mypre = document.getElementById(Sk.pre);
-    // bnm python 3
-    x = text;
-    if (x.charAt(0) == '(') {
-        x = x.slice(1,-1);
-    x = '['+x+']'
-    try {
-        var xl = eval(x);
-        xl = xl.map(pyStr);
-        x = xl.join(' ');
-    } catch(err) {
-        }
-    }
-    text = x;
-    text = text.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br/>");
-    mypre.innerHTML = mypre.innerHTML + text;
+function outf(text) { 
+    var mypre = document.getElementById("output"); 
+    mypre.innerHTML = mypre.innerHTML + text; 
 } 
 function builtinRead(x) {
     if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
