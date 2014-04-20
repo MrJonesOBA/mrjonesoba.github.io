@@ -60,9 +60,34 @@ ul.tabs li.selected a:hover
 
 div.tabcontents
 {
-    border: 1px solid #B7B7B7; padding: 30px;
+    border: 1px solid #B7B7B7;
     background-color:#FFF;
     border-radius: 0 3px 3px 3px;
+	font-size: 14px;
+	padding: 30px;
 	height: 350px;
-	font-size: 12px;
+}
+
+div.tabcontentsForm
+{
+	border: 1px solid #B7B7B7;
+    background-color:#FFF;
+    border-radius: 0 3px 3px 3px;
+	font-size: 14px;
+	padding: 10px 30px;
+	height: 400px;
+	overflow: hidden;
+}
+
+div.tabcontents ul, div.tabcontentsForm ul
+{
+	list-style-type: disc;
+	text-align: left;
+}
+
+div.tabcontents ul ul
+{
+	list-style-type: circle;
+	padding-left: 40px;
+
 }

@@ -5,6 +5,7 @@ body
 {
 	background-color: #E0E0E0;
 	font-family: Arial;
+	font-size: 14px;
 }
 
 ul
@@ -41,7 +42,7 @@ li
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
-	box-shadow: 0px 0px 20px 2px #666;
+	box-shadow: 0px 0px 20px 2px;
 }
 
 #menu
@@ -53,7 +54,7 @@ li
 	background-color: #ffffff;
 }
 
-#slider_wrapper
+#scroll_wrapper
 {
 	width: 600px;
 	height: 500px;
@@ -67,10 +68,10 @@ li
 	left: 100px;
 	height: 500px;
 	width: 10px;
-	box-shadow: 10px 0px 10px -8px #666 inset;
+	box-shadow: 10px 0px 10px -8px inset;
 }
 
-#slider
+#scroll
 {
 	position: relative;
 	left: 0px;
@@ -115,7 +116,7 @@ h1
 .code2
 {
 	font-family: Consolas,"Courier New";
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .red
