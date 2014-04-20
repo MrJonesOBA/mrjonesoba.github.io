@@ -79,15 +79,46 @@ div.tabcontentsForm
 	overflow: hidden;
 }
 
-div.tabcontents ul, div.tabcontentsForm ul
+div.tabcontents ul
 {
 	list-style-type: disc;
 	text-align: left;
+	padding-left: 20px;
+	padding-bottom:20px;
+}
+
+div.tabcontents ol
+{
+	text-align: left;
+	padding-left: 20px;
+	padding-bottom:20px;
+}
+
+div.tabcontentsForm ul
+{
+	list-style-type: disc;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+div.tabcontents ul li, div.tabcontents ol li, div.tabcontentsForm ul li
+{
+	text-align: left;
+	padding-top: 0px;
+	padding-bottom: 15px;
 }
 
 div.tabcontents ul ul
 {
 	list-style-type: circle;
 	padding-left: 40px;
+
+}
+
+div.tabcontents ul ul li
+{
+	padding-top: 0px;
+	padding-bottom: 10px;
 
 }
