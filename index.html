@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Unit 12 Web Design</title>
+
+<script type="text/javascript">
+
+function buttonFadeIn(){
+	document.getElementById("enterdiv").style.opacity=1;
+}
+
+function buttonFadeOut(){
+	document.getElementById("enterdiv").style.opacity=0;
+}
+
+function buttonOver(){
+	document.enter.src="images/enter_hover.png";
+}
+
+function buttonOut(){
+	document.enter.src="images/enter.png";
+}
+
+</script>
+
+<style type="text/css">
+body
+{
+	background-image: url(images/web_design_blur.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#landing_wrapper
+{
+	/*margin: 100px auto;*/
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%);
+	padding-top: 20px;
+	height: 150px;
+	margin-top: -95px;
+	width: 500px;
+	margin-left: -250px;
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 0px 0px 40px -10px #333;
+	border-radius: 25px;
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	
+	transition: .5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+}
+
+#landing_wrapper:hover
+{
+	height: 350px;
+	margin-top: -195px;
+	cursor: pointer;
+}
+
+#enterdiv
+{
+	padding-top: 60px;
+	opacity: 0;
+	transition: opacity 3s ease-in-out;
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="landing_wrapper" onmouseover="buttonFadeIn()" onmouseout="buttonFadeOut()">
+	<div>
+        <h1>Cambridge Technicals</h1>
+        <h2>Unit 12 Web Design</h2>
+    </div>
+    <div id="enterdiv">
+    	<a href="home.html"><img name="enter" src="images/enter.png" onMouseOver="buttonOver()" onmouseout="buttonOut()"/></a>
+    </div>
+</div>
+
+
+
+</body>
+</html>
