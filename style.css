@@ -27,14 +27,16 @@ li
 
 #fade li
 {
-	background: #fff;
-	transition: background .5s ease-in-out;
-	-webkit-transition: background .5s ease-in-out;
+	background-color: rgba(215,235,255,0);
+	font-weight:normal;
+	transition: .5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
 }
 
 #fade li:hover
 {
-	background: #ddd;
+	background-color: rgba(135,175,205,1);
+	font-weight:bold;
 	cursor: pointer;
 }
 
@@ -54,9 +56,9 @@ li
 	height: 420px;
 	text-align: center;
 	float: left;
-	background-color: #ffffff;
-	opacity: 0.98;
+	background-color: rgba(215,235,255,0.95);
 	padding-top: 80px;
+	font-weight:normal;
 }
 
 #scroll_wrapper
@@ -99,7 +101,7 @@ li
 
 h1
 {
-	font-size: 28px;
+	font-size: 32px;
 }
 
 .code, .code1
