@@ -6,7 +6,7 @@
 }
 
 #slider, #slider div.sliderInner {
-    width:550px;height:306px;/* <--- ATTENTION - Change this to the size of your images */
+    width:550px;height:261px;/* <--- ATTENTION - Change this to the size of your images */
 }
 
 #slider {
@@ -70,7 +70,7 @@
 	
 	/* ATTENTION - For NO bullets delete the following properties from this rule and uncomment the previous line */
 	
-    top:320px;/* Its position is relative to the #slider */
+    top:275px;/* Its position is relative to the #slider */
 	text-align:center;
 	background:none;
 	position:relative;
