@@ -4,6 +4,9 @@
 body
 {
 	background-color: #E0E0E0;
+	background-image:url(images/web_design.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
 	font-family: Arial;
 	font-size: 14px;
 }
@@ -48,10 +51,12 @@ li
 #menu
 {
 	width: 100px;
-	height: 500px;
+	height: 420px;
 	text-align: center;
 	float: left;
 	background-color: #ffffff;
+	opacity: 0.98;
+	padding-top: 80px;
 }
 
 #scroll_wrapper
@@ -60,6 +65,7 @@ li
 	height: 500px;
 	float: left;
 	overflow: hidden;
+	opacity: 0.98;
 }
 
 #imageshadow
